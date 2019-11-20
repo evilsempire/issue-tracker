@@ -1,0 +1,30 @@
+table{
+    width: 80%;
+    text-align: center;
+    border: solid 1px #ddd1d1;
+    margin-left: 10%;
+    font-size: 18px;
+}
+
+th{
+    height: 30px;
+}
+
+th,td{
+    border: 1px solid #ccc;
+    padding: 15px;
+}
+
+tr:hover {
+    background: #d1d1d1;
+  }
+
+tr:nth-child(even) {
+    background: #efefef;
+  }
+
+  a{
+    color: #4f61df;
+    border-bottom: dotted 1px #4f61df;
+    text-decoration: none;
+  }

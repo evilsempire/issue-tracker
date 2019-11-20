@@ -1,0 +1,227 @@
+[
+  {
+    "id": 1,
+    "project_name": "Design the solution",
+    "tasks": [
+      {
+        "id": 1,
+        "description": "Identify resources to be monitored.",
+        "status": 3
+      },
+      {
+        "id": 2,
+        "description": "Define users and workflow",
+        "status": 1
+      },
+      {
+        "id": 3,
+        "description": "Identify event sources by resource type.",
+        "status": 2
+      },
+      {
+        "id": 4,
+        "description": "Define the relationship between resources and business systems.",
+        "status": 2
+      },
+      {
+        "id": 5,
+        "description": "Identify tasks and URLs by resource type.",
+        "status": 2
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "project_name": "Prepare for implementation",
+    "tasks": [
+      {
+        "id": 6,
+        "description": "Identify the implementation team.",
+        "status": 2
+      },
+      {
+        "id": 7,
+        "description": "Order the server hardware for production as well as test/quality assurance (QA).",
+        "status": 2
+      },
+      {
+        "id": 8,
+        "description": "Order console machines.",
+        "status": 2
+      },
+      {
+        "id": 9,
+        "description": "Order prerequisite software.",
+        "status": 2
+      },
+      {
+        "id": 10,
+        "description": "Identify the test LPAR.",
+        "status": 2
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "project_name": "Prepare the test/QA environment",
+    "tasks": [
+      {
+        "id": 11,
+        "description": "Install test and QA servers and prerequisite software.",
+        "status": 2
+      },
+      {
+        "id": 12,
+        "description": "Install console machines and prerequisite software.",
+        "status": 2
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "project_name": "Install the product in the test/QA environment.",
+    "tasks": [
+      {
+        "id": 13,
+        "description": "Install Tivoli Business Systems Manager and appropriate patches on test or QA servers.",
+        "status": 2
+      },
+      {
+        "id": 14,
+        "description": "Install Tivoli Business Systems Manager on console machines.",
+        "status": 1
+      },
+      {
+        "id": 15,
+        "description": "Install event enablement on the Tivoli Enterprise Console server.",
+        "status": 2
+      },
+      {
+        "id": 16,
+        "description": "Create configuration level objects for the test LPAR.",
+        "status": 3
+      },
+      {
+        "id": 17,
+        "description": "Configure servers, Source/390 on the test LPAR, event enablement on the Tivoli Enterprise Console server, and verify connectivity.",
+        "status": 1
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "project_name": "Implement distributed data feeds",
+    "tasks": [
+      {
+        "id": 18,
+        "description": "Extend the data model.",
+        "status": 3
+      },
+      {
+        "id": 19,
+        "description": "Configure the instance placement.",
+        "status": 1
+      },
+      {
+        "id": 20,
+        "description": "Configure the Tivoli Enterprise Console rules to send events.",
+        "status": 2
+      },
+      {
+        "id": 21,
+        "description": "Associate tasks and URLs with object types.",
+        "status": 1
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "project_name": "Schedule jobs",
+    "tasks": [
+      {
+        "id": 22,
+        "description": "Tivoli Business Systems Manager SQL server jobs",
+        "status": 2
+      },
+      {
+        "id": 23,
+        "description": "Source/390 rediscoveries",
+        "status": 1
+      },
+      {
+        "id": 24,
+        "description": "Batch schedule download/process",
+        "status": 2
+      }
+    ]
+  },
+
+  {
+    "id": 7,
+    "project_name": "Prepare the production environment.",
+    "tasks": [
+      {
+        "id": 25,
+        "description": "Install production servers and prerequisite software.",
+        "status": 2
+      },
+      {
+        "id": 26,
+        "description": "Install console machines and prerequisite software.",
+        "status": 1
+      },
+      {
+        "id": 27,
+        "description": "Verify connectivity from production servers to the production LPAR, Tivoli Enterprise Console server, and console machines.",
+        "status": 2
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "project_name": "Install the product in the production environment.",
+    "tasks": [
+      {
+        "id": 18,
+        "description": "Install Tivoli Business Systems Manager on console machines.",
+        "status": 2
+      },
+      {
+        "id": 29,
+        "description": "Install event enablement on the Tivoli Enterprise Console server.",
+        "status": 3
+      },
+      {
+        "id": 30,
+        "description": "Create configuration level objects for the production LPARs.",
+        "status": 1
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "project_name": "Install the history server.",
+    "tasks": [
+      {
+        "id": 31,
+        "description": "Create databases on the history server.",
+        "status": 2
+      },
+      {
+        "id": 32,
+        "description": "Set up and test jobs on the database server to produce the database backup.",
+        "status": 1
+      },
+      {
+        "id": 33,
+        "description": "Set up and test jobs to copy backup databases to the history server.",
+        "status": 3
+      },
+      {
+        "id": 34,
+        "description": "Set up and test jobs to replicate events to the history server.",
+        "status": 1
+      }
+    ]
+  }
+]
